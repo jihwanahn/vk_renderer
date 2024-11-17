@@ -1,0 +1,9 @@
+# Examples 모듈 설정
+add_library(Examples
+    RayTracer/RayTracer.cpp
+    PBR/PBRRenderer.cpp
+    DeferredShading/DeferredShading.cpp
+)
+
+target_include_directories(Examples PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(Examples Core Vulkan::Vulkan)

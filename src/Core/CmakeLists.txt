@@ -1,0 +1,11 @@
+# Core 모듈 설정
+add_library(Core
+    VulkanApp.cpp
+    VulkanUtils.cpp
+    RenderPass.cpp
+    DescriptorSet.cpp
+    Pipeline.cpp
+)
+
+target_include_directories(Core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(Core Vulkan::Vulkan)

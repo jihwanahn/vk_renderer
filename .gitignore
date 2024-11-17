@@ -30,3 +30,43 @@
 *.exe
 *.out
 *.app
+
+# Ignore build artifacts and intermediate files
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+/VulkanApp
+
+# Ignore imgui build artifacts
+/imgui/.editorconfig
+/imgui/.gitattributes
+/imgui/.github
+/imgui/.gitignore
+
+# Ignore shader build artifacts
+/shaders/
+
+# Ignore compiled object files
+*.al
+*.libs
+
+# Ignore temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.old
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
